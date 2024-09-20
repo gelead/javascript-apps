@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My-Drum-Kit</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <div class="container">
+        <div class="drum-grid">
+            <button data-kit-id="kick" id="kick" class="drum">A<br>Kick</button>
+            <button data-kit-id="snare" id="snare" class="drum">S<br>Snare</button>
+            <button data-kit-id="hihat" id="hihat" class="drum">D<br>Hi-Hat</button>
+            <button data-kit-id="tom1" id="tom1" class="drum">F<br>Tom 1</button>
+            <button data-kit-id="tom2" id="tom2" class="drum">G<br>Tom 2</button>
+            <button data-kit-id="crash" id="crash" class="drum">H<br>Crash</button>
+            <button data-kit-id="ride" id="ride" class="drum">J<br>Ride</button>
+            <button data-kit-id="clap" id="clap" class="drum">K<br>Clap</button>
+            <button data-kit-id="perc" id="perc" class="drum">L<br>Percussion</button>
+        </div>
+        <div class="controllers">
+            <button class="btn record">Record</button>
+            <button class="btn playback">Playback</button>
+            <input type="range" min="0" max="1" step="0.1" value="0.5" id="volume">
+            <label for="volume">Volume</label>
+        </div>
+    </div>
+
+
+    <script src="home.js"></script>
+</body>
+</html>

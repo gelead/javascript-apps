@@ -1,0 +1,62 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #222;
+    color: white;
+    font-family: sans-serif;
+  }
+  
+  .drum-kit {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .drum {
+    width: 100px;
+    height: 100px;
+    background: #444;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+    user-select: none;
+    font-size: 1.2rem;
+    transition: 0.1s ease;
+  }
+  
+  .drum.active {
+    background-color: #ff6347;
+    box-shadow: 0 0 10px rgba(255, 99, 71, 0.5);
+  }
+  
+  .controls {
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+  }
+  
+  input[type="range"] {
+    appearance: none;
+    width: 150px;
+    height: 10px;
+    background: #666;
+  }
+  
+  button {
+    background-color: #555;
+    border: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.2s ease;
+  }
+  
+  button:hover {
+    background-color: #777;
+  }
+  

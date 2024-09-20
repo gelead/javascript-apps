@@ -1,0 +1,74 @@
+body{
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40vh;
+    background-color: whitesmoke;
+}
+.container{
+    width: 70%;
+    max-width: 500px;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: white;
+}
+.task-input{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.task-text, .task-date{
+    padding: 1rem;
+    border-radius: 4px;
+    margin: 10px 10px;
+    font-size: 14px;
+}
+.add-btn{
+    padding: 1rem;
+    color: white;
+    background-color: rgb(29, 176, 29);
+    border: none;
+    border-radius: 7px;
+}
+.add-btn:hover{
+    opacity: 0.9;
+}
+.task-list{
+    list-style-type: none;   
+    padding: 0;
+}
+
+li{
+    padding: 10px;
+    align-items: center;
+    border-radius: 7px;
+    text-align: start;
+    border: 0.1px solid gray;
+    display: grid;
+    grid-template-columns: 1fr 1fr 80px 80px;
+}
+li button{
+    margin: auto 10px;
+    padding: 0.4rem;
+    border: none;
+    color: white;
+    font-size: 0.9rem;
+    border-radius: 7px;
+    
+}
+li button:hover{
+    opacity: 0.9;
+}
+.edit-btn{
+    background-color: rgb(51, 129, 245);
+}
+.delete-btn{
+    background-color: rgb(244, 40, 29);
+}
+.due-date{
+    color: gray;
+    font-size: 0.8rem;
+}

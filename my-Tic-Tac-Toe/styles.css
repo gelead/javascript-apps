@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Lemon&family=Open+Sans:wght@300;400&family=Tektur&display=swap');
+
+:root {
+    --background-color: #0b0731;
+    --header-text-color: white;
+    --cell-background: #1e3640;
+    --gold-color: #f6c124;
+    --blue-color: #2fbeb8;
+    --border-color: #2717b9;
+    --button-text-color: #3cfdb7;
+    --lose-color: red;
+    --win-color: #04ff04;
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'Lemon', serif;
+    background-color: var(--background-color);
+    position: relative;
+}
+.result{
+    left: 10;
+    width: 600px;
+    color: coral;
+    font-size: 4rem;
+    position: fixed;
+    top: 180px;
+
+}
+.game-container{
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 1rem;
+    box-sizing: border-box;
+    text-align: center;
+}
+.game-title{
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    color: var(--header-text-color);
+    text-shadow: 0px 0px 20px blue;
+    margin-bottom: 20px;
+}
+.box-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 160px);
+    place-content: center;
+    row-gap: 10px;
+}
+.box{
+    padding: 1rem;
+    width: 150px;
+    height: 150px;
+    font-size: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cell-background);
+    border: none;
+    cursor: pointer;
+}
+.players-container{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 17px auto;   
+    font-size: 1.3rem;
+}
+
+.player-score:first-child{
+    color: var(--gold-color);
+}
+.player-1-score{
+    font-size: 2.7rem;
+}
+.tie-score{
+    font-size: 2.7rem;
+}
+.player-2-score{
+    font-size: 2.7rem;
+}
+.player-score:last-child{
+    color: var(--blue-color);
+}
+.player-score:nth-child(2){
+    color: var(--lose-color);
+}
+.gold {
+    color: var(--gold-color);
+}
+.blue{
+    color: var(--blue-color);
+}
+
+.btn{
+    padding: 0.7rem 1.2rem;
+    margin: 1rem 2rem;
+    font-size: 1.2rem;
+    background-color: inherit;
+    color: var(--button-text-color);
+    outline: none;
+    border: 1px solid;
+    border-color: var(--border-color);
+    cursor: pointer;
+    font-family: 'Tektur', sans-serif;
+    width: 120px;
+    height: 50px;
+}
+.btn:active {
+    transform: scale(0.96);
+}
+.win {
+    color: var(--win-color);
+    text-shadow: 0 0 20px green, 0 0 20px green, 0 0 20px green;
+    animation: win 0.3s;
+}
+
+@keyframes win {
+    from {
+        font-size: 0;
+    }
+    to {
+        font-size: 8rem;
+    }
+}
+.lose {
+    opacity: 0.5;
+}

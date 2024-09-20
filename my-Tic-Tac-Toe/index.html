@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>tic-tac-toe</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="game-container">
+      <h1 class="game-title">Tic Tac Toe</h1>
+      <div class="box-grid">
+        <button id="1" class="box"></button>
+        <button id="2" class="box"></button>
+        <button id="3" class="box"></button>
+        <button id="4" class="box"></button>
+        <button id="5" class="box"></button>
+        <button id="6" class="box"></button>
+        <button id="7" class="box"></button>
+        <button id="8" class="box"></button>
+        <button id="9" class="box"></button>
+      </div>
+      <div class="players-container">
+        <div class="player-score">
+          <span class="player-1">Player(X)</span><br />
+          <span class="player-1-score">0</span>
+        </div>
+        <div class="player-score">
+          <span class="tie">Tie</span><br />
+          <span class="tie-score">0</span>
+        </div>
+        <div class="player-score">
+          <span class="player-2">Player(O)</span><br />
+          <span class="player-2-score">0</span>
+        </div>
+      </div>
+      <div class="buttons">
+        <button class="btn reset">Reset</button>
+        <button class="btn restart">Restart</button>
+      </div>
+      <audio id="winSound" src="wining.mp3" preload="auto"></audio>
+      <audio id="tieSound" src="no-winner.mp3" preload="auto"></audio>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

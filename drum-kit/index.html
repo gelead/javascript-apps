@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advanced Drum Kit</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="drum-kit">
+    <div class="drum" data-key="65" id="kick">A<br>Kick</div>
+    <div class="drum" data-key="83" id="snare">S<br>Snare</div>
+    <div class="drum" data-key="68" id="hihat">D<br>Hi-Hat</div>
+    <div class="drum" data-key="70" id="tom1">F<br>Tom 1</div>
+    <div class="drum" data-key="71" id="tom2">G<br>Tom 2</div>
+    <div class="drum" data-key="72" id="crash">H<br>Crash</div>
+    <div class="drum" data-key="74" id="ride">J<br>Ride</div>
+    <div class="drum" data-key="75" id="clap">K<br>Clap</div>
+    <div class="drum" data-key="76" id="perc">L<br>Percussion</div>
+  </div>
+
+  <div class="controls">
+    <button id="record">Record</button>
+    <button id="playback">Playback</button>
+    <input type="range" id="volume" min="0" max="1" step="0.1" value="0.5">
+    <label for="volume">Volume</label>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

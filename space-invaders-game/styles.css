@@ -1,0 +1,32 @@
+body{
+    background-color: #333;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
+}
+.result{
+    font-size: 2rem;
+}
+.grid{
+    border: 1px solid white;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.grid div{
+    width: 20px;
+    height: 20px;
+}
+.invader{
+    border-radius: 10px;
+    background-color: purple;
+}
+.shooter{
+    background-color: green;
+}
+.laser{
+    background-color: yellow;
+}
+.boom{
+    background-color: red;
+}

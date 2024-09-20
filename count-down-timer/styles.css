@@ -1,0 +1,36 @@
+body{
+    font-family: monospace;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: whitesmoke;
+    font-size: 1rem;
+}
+.container{
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    display: flex;
+    flex-flow: column nowrap;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+}
+.input{
+    padding: 8px 20px;
+    margin-bottom: 10px;
+}
+h1{
+    color: green;
+}
+.timer{
+    font-size: 3rem;
+}
+.btn{
+    padding: 0.4rem 1rem;
+    margin-top: 10px;
+    background-color: aqua;
+    border: none;
+}
